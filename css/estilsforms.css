@@ -1,0 +1,67 @@
+#quadreMissatge{
+	margin: 10px 10px 0 10px;
+}
+.missatge{
+	max-width: 600px;
+	margin: 20px 10px 0 10px;
+	font-size: .8em;
+	background-color: #fff5e7;
+	border: 2px solid #ff9a00;
+}
+.missatge p{
+	margin: 10px;
+}
+form{
+	max-width: 525px;
+	padding: 10px 10px 50px 10px;
+	margin: 10px 10px 0 10px;
+}
+input, select{
+	padding: 3px;
+	width: 250px;
+	font-size: 14px;
+	font-family: Helvetica, verdana, sans-serif;
+}
+select{
+	width: 259px;
+}
+form li{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+input.botons{
+	width: 130px;
+	clear: both;
+	float: left;
+	margin-top: 10px;
+	margin-right: 30px;
+	padding: 10px 5px;
+}
+input[type="text"], select{
+	color: #ccc;
+}
+input[type="text"]:focus, select:focus{
+	color: #354c66;
+}
+input[type="checkbox"]{
+	width: 20px;
+	margin-left: -3px;
+
+}
+input[name="experiencia"]{
+	width: 80px;
+	text-align: center;
+}
+label{
+	width: 200px;
+	display: block;
+	float: left;
+}
+.llistaErrors li{
+	list-style-type: square;
+	margin-left: 30px;
+}
+.marcaError{
+	background-color: #fff5e7;
+	color: #f00;
+}

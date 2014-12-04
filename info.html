@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Disseny de base de dades - PRA 2</title>
+	
+	<?php
+
+	// Possem aquestes dues linies per a mostrar els errors del nostre codi PHP al navegador.
+	// Quan una web deixa d'estar en desenvolupament s'han de treure aquestes intruccions 
+	// perquè es una vulnerabilitat que pot permetre a  un usuari extern pugui atacar la nostra web.
+	
+	//	Per penjar-ho al servidor, es comenten les línies per què no mostri errors en cas d'haver-hi
+	
+	
+		error_reporting(E_ALL);
+		ini_set('display_errors', '1');
+	
+
+	# Carreguem la classe de gmaps
+		include_once("gmaps/GoogleMap.php");
+	?>
+	
+	<!--[if IE]> 
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<link rel="stylesheet" type="text/CSS" href="css/estils.css">
+	<style type="text/CSS">
+		img{
+			max-width: 100%;
+			margin-left: 20px;
+		}
+		h5{
+			color: #ff9a00;
+		}
+	</style>
+	
+	
+</head>
+<body>
+<div id="contenedorGeneral">
+	<div id="contenedorContenido">
+	<header>
+		<hgroup>
+			<h1>PRA 2 - <span class="nom">Disseny de bases de dades</span></h1>
+			<h2>Informació sobre el projecte</h2>
+			<div id="logoHome">
+				<a href="./">Principal</a>
+			</div>
+		</hgroup>
+	</header>
+	<section>
+
+		<h3>El projecte</h3>
+			<p>La web permet fer una cerca i geoposicionar ajudant-se amb l'API de Google els valors trobats a la mateixa.</p>
+			<p>L'enllaç a Comoras es <a href="http://comoras.uoc.edu/~jmorenoal/PRA2/">http://comoras.uoc.edu/~jmorenoal/PRA2/info.html</a><p>
+			<p>Una vegada feta la cerca permet veure la fitxa de l'element i crear un document pdf amb el mateix contingut.</p>
+			<p>Els exemples que es van possar a la PAC1 eren la gran majoria reals, a execpció de les dades personals dels treballadors, qualsevol semblança amb la realitat es mera coincidència. S'han utilitzat imatges de programes, emissores i treballadors cercades a Google, a excepció dels tertulians que eran totalment inventats i per això s'ha cercat imatges de disney per ells.</p>
+		<h3>Ús del cercador</h3>
+			<p>Busca la paraula escrita a qualsevol de les taules que se li digui i en la majoria dels camps de les taules.</p>
+			<p>Quan, com a opció de cerca s'escull treballadors, es fa aparèixer un selector per poder a més cercar per població.</p>
+			<p>Al fer enviar, apareixen els resultats de la cerca i el geoposicionament al mapa de google. Tant al llistat com en els globus dels mapes apareixen links cap a les fitxes que han motivat aquesta cerca.</p>
+			<p>Quan es geoposicionen els resultats, es fa les emissores de radio en color verd, utilitzant les coordenades introduïdes en la base de dades i els treballadors, utilitzant els camps de l'adreça i la població</p>
+		<h3>La base de dades</h3>
+			<h4>El diagrama E-R de la base de dades</h4>
+			<img src="images/B1-1 - Solució gràfica E-R.png">
+			<h4>Explicació de les seves entitats, atributs i relacions.</h4>
+			<p>S'ha incorporat anteriorment el model E-R que es va presentar a la PAC1, tot i que per aquesta Pràctica s'ha fet alguna petita modificació.</p>
+			<p>S'ha creat una entitat pels CP i una altra per les poblacions. Es considerava que podria haver-hi dades repetides quan la informació anès ampliant-se i per això es millor d'aquesta forma.</p>
+			<p>També s'han creat les entitats dies de la setmana i emissions_programes per evitar atributs amb valors múltiples.</p>
+			<p>Igualment per evitar atributs amb valors múltiples com podia ser el telèfon, s'ha separat en dos camps Telefon1 i Telefon2.</p>
+			<p>Com es podrà veure en les imatges del model relacional extretes del gestor MySQL de phpMyAdmin que es mostren a continuació.</p>
+			<h4>Taules al model relacional.</h4>
+			<h5>emissores</h5>
+			<img src="images/taules/emissores.png">
+			<h5>programes</h5>
+			<img src="images/taules/programes.png">
+			<h5>treballadors</h5>
+			<img src="images/taules/treballadors.png">
+			<h5>tertulians</h5>
+			<img src="images/taules/tertulians.png">
+			<h5>poblacions</h5>
+			<img src="images/taules/poblacions.png">
+			<h5>codis_postals</h5>
+			<img src="images/taules/cp.png">
+			<h5>dias_setmana</h5>
+			<img src="images/taules/dies.png">
+			<h5>emissions_programes</h5>
+			<img src="images/taules/emissions_programes.png">
+			<h5>tertulians_programes</h5>
+			<img src="images/taules/tertulians_programes.png">
+			
+		<aside>
+
+
+
+		</aside>
+		
+		<article>
+
+
+
+		</article>
+	
+	</section>
+	</div>
+	<div id="clearfooter"></div>
+	<footer>
+		<hgroup>
+			<h3>
+			<span class="nom">Julià Moreno Alonso</span><br>
+			Disseny de bases de dades
+			</h3>
+			<h4>
+			Grau en Multimèdia<br>
+			<span class="inicials">E</span>studis d'<span class="inicials">I</span>nformàtica <span class="inicials">M</span>ultimèdia i <span class="inicials">T</span>elecomunicació
+			</h3>
+		</hgroup>
+	</footer>
+</div>
+</body>
+</html>

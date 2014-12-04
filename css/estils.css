@@ -1,0 +1,219 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html, body {
+	height: 100%;
+	font-size: 16px;
+	font-family: Helvetica, verdana, sans-serif;
+	color: #354c66;
+	letter-spacing: 1px;
+}
+body{
+	background-color: #fff;
+}
+header{
+	width: 100%;
+	border-bottom: 1px dotted #ff9a00;
+	padding: 10px 0 10px 0;
+	margin-bottom: 20px;
+}
+h1, h2, h3, h4, h5{
+	margin: 10px;
+}
+section h3{
+	color: #ff9a00;
+}
+p{
+	margin: 20px;
+}
+p{
+	line-height: 1.5;
+}
+aside{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer h3{
+	font-size: 14px;
+}
+.nom{
+	color: #ff9a00;
+}
+footer h4{
+	font-size: 12px;
+}
+.inicials{
+	color: #ff9a00;
+	font-weight: bold;
+}
+#contenedorGeneral {
+	max-width: 1000px;
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto 0 auto;
+}
+#contenedorContenido {
+	padding-bottom: 120px;
+	overflow: hidden;
+}
+footer {
+	border-top: 1px dotted #ff9a00;
+	width: 100%;
+	position: absolute;
+	bottom: 0 !important;
+	bottom: -1px;
+	height: 100px;
+}
+#clearfooter{
+	display:block;
+	height:10px
+}
+
+.mapa{
+	margin: 10px 10px 0 10px;
+	border: 2px solid #ff9a00;
+}
+a{
+	color: #ff9a00;
+	text-decoration: none;
+	font-size: 12px;
+	border-bottom: 1px dotted #ff9a00;
+}
+a:hover{
+	color: #ffd596;
+	border-bottom: 1px solid #ffd596;
+}
+#tornar a{
+	position: absolute;
+	margin-top: -20px;
+	right: 10px;
+	color: #ff9a00;
+	text-decoration: none;
+	font-size: .8em;
+	border-bottom: 1px dotted #ff9a00;
+}
+#tornar a:hover{
+	color: #ffd596;
+}
+#logoInfo, #logoHome, #logoTancar, #logoPDF{
+	position: absolute;
+	margin-top: -70px;
+	right: 0;
+	text-align: center;
+}
+#logoPDF{
+	right: 70px;
+}
+#logoInfo a, #logoHome a, #logoTancar a, #logoPDF a{
+	width: 70px;
+	height: 15px;
+	padding-top: 50px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: top center;
+	color: #ffd596;
+	text-decoration: none;
+	font-size: .8em;
+	border: 0;
+}
+#logoInfo a{
+	background-image: url('../images/logoinfo.png');
+}
+#logoHome a{
+	background-image: url('../images/home.png');
+}
+#logoTancar a{
+	background-image: url('../images/tancar.png');
+}
+#logoPDF a{
+	background-image: url('../images/pdf.png');
+}
+#logoInfo a:hover, #logoHome a:hover, #logoTancar a:hover, #logoPDF a:hover{
+	color: #ff9a00;
+	text-decoration: underline;
+}
+#logoInfo a:hover{
+	background-image: url('../images/logoinfoSobre.png');
+}
+#logoHome a:hover{
+	background-image: url('../images/homesobre.png');
+}
+#logoTancar a:hover{
+	background-image: url('../images/tancarsobre.png');
+}
+#logoPDF a:hover{
+	background-image: url('../images/pdfsobre.png');
+}
+section{
+	margin: auto;
+	min-height: 550px;
+	width: 100%;
+	min-width: 320px;
+}
+ul{
+	margin: 0 0 10px 20px;
+}
+li{
+	list-style-type: none;
+}
+.llistats{
+	font-size: 12px;
+}
+ul.llistats{
+	margin-top: 20px;
+}
+.llistats li{
+	list-style-type: square;
+	margin-bottom: 5px;
+}
+.llistats li ul li{
+	list-style-type: circle;
+	padding-top: 5px;
+	color: auto;
+	font-weight: normal;
+}
+.globusMapa p{
+	margin: 0;
+}
+.textResaltatGlobus{
+	color: #ff9a00;
+}
+#esquerra{
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 60%;
+	min-width: 300px;
+}
+#dret{
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 40%;
+	min-width: 300px;
+	text-align: center;
+}
+#dret img{
+	width: 90%;
+}
+.h3Fitxa{
+	font-size: 2em;
+}
+#esquerra li{
+	margin-left: 20px;
+	line-height: 1.5;
+}
+#esquerra p{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	font-size: .9em;
+}
+#esquerra h4{
+	margin-top: 20px;
+	color: #ff9a00;
+}
